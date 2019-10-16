@@ -42,6 +42,34 @@
 	// CRASH
 //	person.car = car;
 
+	/// is it autoreleased?!
+	NSString *name = [NSString stringWithFormat:@"%@ %@", @"John", @"Miller"];
+	// yes
+
+	NSDate *today = [NSDate date];
+	// yes
+
+	NSDate *now = [NSDate new];
+	// no
+
+	NSDate *tomorrow = [NSDate dateWithTimeIntervalSinceNow:60*60*24];
+	// yes
+
+	NSDate *nextTomorrow = [tomorrow copy];
+	// no
+
+	NSArray *words = [@"This sentence is the bomb" componentsSeparatedByString:@" "];
+	// yes
+
+	NSString *idea = [[NSString alloc] initWithString:@"Hello Ideas"];
+	// no
+
+	NSString *literal = @"this is a literl string";
+	// yes
+
+	[now release];
+	[nextTomorrow release];
+	[idea release];
 }
 
 
