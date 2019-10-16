@@ -12,7 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
 
+@property (copy) NSString *name;
 @property (retain) Car *car;
+
+- (instancetype)initWithCar:(Car *)car;
+
 
 @end
 

@@ -10,8 +10,23 @@
 
 @implementation Person
 
+- (instancetype)init {
+	if (self = [super init]) {
+		
+	}
+	return self;
+}
+
+- (instancetype)initWithCar:(Car *)car {
+	if (self = [super init]) {
+		_car = [car retain];
+	}
+	return self;
+}
+
 - (void)dealloc {
     [_car release];
+	[_name release];
     [super dealloc];
 }
 
