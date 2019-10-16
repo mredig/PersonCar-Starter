@@ -13,6 +13,8 @@
 		BD4AE160225E431B00334262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4AE15F225E431B00334262 /* Assets.xcassets */; };
 		BD4AE163225E431B00334262 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4AE161225E431B00334262 /* LaunchScreen.storyboard */; };
 		BD4AE166225E431B00334262 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4AE165225E431B00334262 /* main.m */; };
+		BD4AE170225E432C00334262 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4AE16E225E432C00334262 /* Car.m */; };
+		BD4AE171225E432C00334262 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4AE16F225E432C00334262 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		BD4AE162225E431B00334262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD4AE164225E431B00334262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD4AE165225E431B00334262 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD4AE16C225E432B00334262 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BD4AE16D225E432C00334262 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		BD4AE16E225E432C00334262 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		BD4AE16F225E432C00334262 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				BD4AE159225E431900334262 /* ViewController.h */,
 				BD4AE15A225E431900334262 /* ViewController.m */,
 				BD4AE15C225E431900334262 /* Main.storyboard */,
+				BD4AE16D225E432C00334262 /* Car.h */,
+				BD4AE16E225E432C00334262 /* Car.m */,
+				BD4AE16C225E432B00334262 /* Person.h */,
+				BD4AE16F225E432C00334262 /* Person.m */,
 				BD4AE15F225E431B00334262 /* Assets.xcassets */,
 				BD4AE161225E431B00334262 /* LaunchScreen.storyboard */,
 				BD4AE164225E431B00334262 /* Info.plist */,
@@ -143,6 +153,8 @@
 			files = (
 				BD4AE15B225E431900334262 /* ViewController.m in Sources */,
 				BD4AE166225E431B00334262 /* main.m in Sources */,
+				BD4AE171225E432C00334262 /* Person.m in Sources */,
+				BD4AE170225E432C00334262 /* Car.m in Sources */,
 				BD4AE158225E431900334262 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = PersonCar/Info.plist;
@@ -302,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = PersonCar/Info.plist;
